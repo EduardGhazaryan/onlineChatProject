@@ -21,7 +21,7 @@ const SignIn = () => {
             <h4>Welcome</h4>
             <p>Sign to your account</p>
             <div className="sign_with" onClick={goToGoogle}>Sign In With Google</div>
-            <div className="sign_with">Sign In With Facebook</div>
+            <div className="sign_with" onClick={goToFacebook}>Sign In With Facebook</div>
             </div>
         </div>
     </div>
