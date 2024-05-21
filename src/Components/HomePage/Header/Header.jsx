@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react";
 import "./header.css";
 import img from "../../../Images/Group 237571.png";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const Header = () => {
   const [text, setText] = useState("");
   const linkRef = useRef(null);
+
+
 
   const changeStyleFocus = () => {
     linkRef.current.style.border = "1px solid darkBlue";
