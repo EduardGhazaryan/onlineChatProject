@@ -17,7 +17,8 @@ const Title = () => {
   }
 
   const signOutFunc = ()=>{
-    window.location = "/"
+    window.location = "http://localhost:4001/logout"
+
   }
 
   return (

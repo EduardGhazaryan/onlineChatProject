@@ -1,17 +1,25 @@
 import React from 'react'
 import './signIn.css'
 import img from '../../Images/8-01 1.png'
+import Cookies from 'js-cookie'
 
 const SignIn = () => {
-
-  const goToGoogle = ()=>{
-    window.location.href = 'http://localhost:4000/api/auth/google'
+  
+  const goToGoogle =async ()=>{
+    window.location.href = 'http://localhost:4001/auth/google'
   }
-
+  // fetch('http://195.181.242.194:4001/profile')
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data);
+  // })
+  // .catch(error => console.error('Error:', error));
+  // const cook=Cookies.get(email)
+  // console.log(cook);
   const goToFacebook = ()=>{
-    window.location.href = "http://localhost:4000/api/auth/facebook"
+    window.location.href = "http://195.181.242.194:4001/auth/facebook"
   }
-
+  
   return (
     <div className='signIn_main'>
         <div className="signIn_content">
@@ -26,6 +34,7 @@ const SignIn = () => {
         </div>
     </div>
   )
+  
 }
 
 export default SignIn
