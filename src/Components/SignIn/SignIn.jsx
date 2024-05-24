@@ -6,18 +6,11 @@ import Cookies from 'js-cookie'
 const SignIn = () => {
   
   const goToGoogle =async ()=>{
-    window.location.href = 'http://localhost:4001/auth/google'
+    window.location.href = 'http://chat.trigger.ltd:4001/auth/google'
   }
-  // fetch('http://195.181.242.194:4001/profile')
-  // .then(response => response.json())
-  // .then(data => {
-  //   console.log(data);
-  // })
-  // .catch(error => console.error('Error:', error));
-  // const cook=Cookies.get(email)
-  // console.log(cook);
+
   const goToFacebook = ()=>{
-    window.location.href = "http://195.181.242.194:4001/auth/facebook"
+    window.location.href = "http://chat.trigger.ltd:4001/auth/facebook"
   }
   
   return (
